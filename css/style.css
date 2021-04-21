@@ -36,7 +36,9 @@ ul{
 a{
     text-decoration: none;
 }
-
+hr{
+    color: var(--tertiary-color-light);
+}
 .container{
     margin: auto;
     width: 100%;
@@ -94,5 +96,36 @@ a{
 }
 
 .title-section{
+    color: var(--primary-color-light);
+    font-size: 1.8em;
+    text-align: center;
     margin-top: 65px ;
 }
+
+/* Home section */
+
+/* Who im section */
+#main-im{
+    text-align: center;
+}
+#main-im img{
+    border: 2px solid #f38b03;
+    box-shadow: 3px 3px 5px #747474;;
+    border-radius: 50%;  
+    margin-top: 2%;
+    width: 200px;
+}
+
+#main-im #personal-data{
+    font-size: 1.6em;
+    margin-top:15px;
+    padding: 1%;
+}
+
+#main-im #about-me{
+    font-size: 1.4em;  ;
+}
+/* Home section */
+/* Home section */
+/* Home section */
+
