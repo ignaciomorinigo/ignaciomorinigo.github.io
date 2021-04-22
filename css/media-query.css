@@ -1,0 +1,67 @@
+@media only screen and (max-width:320px){}
+@media only screen and (max-width:480px){}
+@media only screen and (max-width:768px){}
+
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+
+    .nav-main{
+        position: relative;
+    }
+
+    .nav-main .shopping{
+        display: none;
+    }
+
+    .nav-main .menu-bar{
+        display: block;
+        grid-column: 8/9;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    .nav-main .nav-menu{
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        display: grid;
+        align-items: center;
+        background-color: #edcb54;
+        margin-top: 38em;
+        transform: translateX(170%);
+        transition: all 1s;
+    }
+
+    .nav-main .menu-toggle{
+        transform: translateX(70%);
+    }
+
+    .nav-main .nav-search{
+        display: none;
+    }
+
+    /* Main */
+    .hero .info-content{
+        grid-column: 2/10;
+        grid-row: 5 /8
+    }
+    .hero h1{
+        font-size: 3.5em;
+    }
+
+    /* Footer*/
+    footer .follow-me {
+        display: none;
+    }
+
+    footer .social-network{
+        text-align: center;
+        
+    }
+
+}

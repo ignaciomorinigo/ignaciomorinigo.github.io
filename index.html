@@ -7,15 +7,17 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="./css/fonts.css">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/media-query.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
-        <title>Ignacio Morinigo Web</title>
+        <title>Ignacio Morinigo - Web</title>
     </head>
     <body>
-        <main class="container">
+        <header>
             <!--Nav menu-->
             <nav class="nav-main">
                 <img src="./assets/img/brand.png" alt="morinacho logo" class="nav-brand">
-                <ul class="nav-menu">
+                <ul class="nav-menu" id="nav-menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#im">Who I'm</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -23,18 +25,22 @@
                     <li><a href="#knowledge">Knowledge</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="menu-bar" id="menu-bar">
+                    <i class="material-icons">menu</i>
+                </div>
                 <!--Search-->
-                <ul class="nav-menu-right">
+                <ul class="nav-search">
                     <li><a href="#"><i class="material-icons">search</i></a></li>
                 </ul>
             </nav>
-
+        </header>
+        <main class="container">
             <!--Home-->
             <section id="home" class="content">
                 <div class="title-section">
-                    <p id="my-name">Ignacio Morinigo</p>
-                    <p id="my-profesion">Frontend - Backend Web Developer</p>
-                    <cite>Design the future by developing the present.</cite>
+                    <p id="my-name" data-aos="zoom-out-down" data-aos-duration="800">Ignacio Morinigo</p>
+                    <p id="my-profesion" data-aos="zoom-out" data-aos-duration="800">Frontend - Backend Web Developer</p>
+                    <p data-aos="zoom-out-up" data-aos-duration="800"><cite>Design the future by developing the present.</cite></p>
                 </div> 
             </section>
 
@@ -46,14 +52,22 @@
                     <hr>
                 </article>
                 <article id="main-im"> 
-                    <img src="./assets/img/profile.png" alt="profile">
+                    <img src="./assets/img/profile.png" alt="profile" >
                     <div id="personal-data">
-                        <p>Ismael Ignacio Morinigo, 32 years old - Argentinian</p>
+                        <p>Ismael Ignacio Morinigo - Argentinian</p>
                     </div> 
                     <div id="about-me"> 
                         <p>I'm a constantly growing <b>web developer</b>, passionate about <b>graphic design</b>, pizza lover and an <b>information systems engineer</b> in process.</p>
                     </div>
                 </article>
+                <footer id="footer-icons">
+                    <a href="https://github.com/morinacho" target="_blank"><img src="./assets/icons/icons8-github-30.png" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/ismael-ignacio-morinigo-8822a538/" target="_blank"><img src="./assets/icons/icons8-linkedin-30.png" alt="instagram"></a>
+                    <a href="https://wa.me/+542665035694" target="_blank"><img src="./assets/icons/icons8-whatsapp-30.png" alt="whatsapp"></a>
+                    <a href="https://t.me/morinacho" target="_blank"><img src="./assets/icons/icons8-telegram-app-30.png" alt="telegram"></a>
+                    <a href="mailto:morinacho@gmail.com" target="_blank"><img src="./assets/icons/icons8-gmail-30.png" alt="whatsapp"></a>
+                    <a href="https://www.youtube.com/channel/UCLKkpOBSzm8sTbXCJhYv2jQ?view_as=subscriber" target="_blank"><img src="./assets/icons/icons8-youtube-30.png" alt="youtube"></a>
+                </footer>
             </section>
 
             <!--Projects-->
@@ -90,7 +104,15 @@
                     <span>I will answer all your questions and concerns.</span>
                     <hr>
                 </article>
+                <footer>
+                    <ul> 
+                        <li><span class="material-icons">room</span><span class="footer-li"> Villa Mercedes, San Luis</span></li>
+                    </ul>
+                </footer>
             </section>
-        </main>        
+        </main> 
+        <script src="./js/app.js"></script>       
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
     </body>
 </html>

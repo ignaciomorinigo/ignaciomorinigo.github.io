@@ -38,6 +38,7 @@ a{
 }
 hr{
     color: var(--tertiary-color-light);
+    margin-top: 10px;
 }
 .container{
     margin: auto;
@@ -48,32 +49,26 @@ hr{
 .nav-main{
     background-color: rgba(0, 0, 0, .8);
     font-size: 1.2em;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     align-items: center;
-    height: 60px;
-    padding: 20px 0;
-    padding:0 5%;
-    position: fixed;
+    position:fixed;
     width: 100%;
+    z-index: 999;
 }
 
 .nav-brand{
+    height: 50px;
+    grid-column: 2/3;
     width: 50px;
 }
-
-.nav-main ul{
+.nav-main .nav-menu{
+    grid-column: 3/9;
     display: flex;
-    
-}
-
-.nav-main ul.nav-menu{
-    flex: 1;
-    margin-left: 30px;
+    justify-content: space-around;
 }
 
 .nav-main ul li{
-    padding: 10px;
     overflow: hidden;
 }
 
@@ -82,10 +77,15 @@ hr{
 }
 
 .nav-main ul li a:hover{
-    border-bottom: 1px solid var(--quaternary-color-dark);
     color: var(--quaternary-color-dark);
     font-size: 1.3em;
     transition: 400ms;
+}
+.nav-main .nav-search{
+    grid-column: 11/12;
+}
+.nav-main .menu-bar{
+    display: none;
 }
 
 /* Content*/
@@ -94,7 +94,13 @@ hr{
     padding: 0 5%;
     overflow: hidden; 
 }
-
+.content:nth-child(odd){
+    background-size: cover;
+    max-width: 100%;
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+    overflow: hidden;
+}
 .title-section{
     color: var(--primary-color-light);
     font-size: 1.8em;
@@ -103,6 +109,22 @@ hr{
 }
 
 /* Home section */
+#home{
+    background-image: url(../assets/img/background.jpg);
+    text-shadow: 3px 3px 4px #747474;
+    text-align: center;
+}
+#home #my-name{
+    font-size: 2.4em; 
+    margin-top: 230px
+}
+#home #my-profesion{
+    font-size: 1.4em; 
+    margin: 15px 0 15px 0;
+}
+#home cite{
+    font-size: 1em
+}
 
 /* Who im section */
 #main-im{
@@ -125,7 +147,29 @@ hr{
 #main-im #about-me{
     font-size: 1.4em;  ;
 }
-/* Home section */
-/* Home section */
-/* Home section */
+
+#im #footer-icons{
+    margin-top: 25px;
+    text-align: center;
+}
+
+#im #footer-icons a{
+    padding-right: 8px;
+}
+
+/* Projects section */
+#projects{
+    background-image: url(../assets/img/projects.jpeg);
+    text-shadow: 3px 3px 4px #747474;
+    text-align: center;
+}
+/* Experience section */
+
+/* Knowledge section */
+#knowledge{
+    background-image: url(../assets/img/knowledge.jpeg);
+    text-shadow: 3px 3px 4px #747474;
+    text-align: center;
+}
+/* Contact section */
 
