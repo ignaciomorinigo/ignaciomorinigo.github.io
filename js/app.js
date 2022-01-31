@@ -5,11 +5,11 @@ menu_bar.addEventListener('click', function(){
     menu.classList.toggle('menu-toggle');
 })
 
-// Cards
+//  Projects Cards
 let cards_container = document.querySelector('#cards-container');
 const cards = (img, title, codeLink, pageLink, description, icons) => { 
     let li = icons.map(icon => `<li><img src="../assets/icons/${icon}" alt="icons dev"></li>`).join("");
-    let content = `
+    return `
         <section class="card">
             <img class="card-background" src="../assets/img/${img}" alt="">
             <h3><a href="${pageLink}" class="card-link" target="_blank">${title}</a></h3>
@@ -17,8 +17,7 @@ const cards = (img, title, codeLink, pageLink, description, icons) => {
             <a href="${codeLink}" target="_blank">&lt;View code&gt;</View></a>
             <ul>${li}</ul>
         </section>
-    `;
-    return content;
+    `; 
 };
 
 let cardsArray = []
@@ -29,3 +28,20 @@ cardsArray.push(cards('ilibrary.png', 'I-Library web ', 'https://github.com/mori
 cardsArray.push(cards('jankenpo.png', 'JanKenPo', 'https://github.com/morinacho/jankenpo-java', 'https://github.com/morinacho/jankenpo-java', 'Rock-paper-scissors game with the option to play alone or with multiple players.', ['icons8-java-30.png']));
 cardsArray.push(cards('ilibrary-des.png', 'Library Manager ', 'https://github.com/morinacho/library-manager-java', 'https://github.com/morinacho/library-manager-java', 'Desktop application to manage a library without database connection.', ['icons8-java-30.png']));
 cards_container.innerHTML = cardsArray.join("");
+
+// Experience timeLine
+let experienceContainer = document.querySelector('.experience-container');
+const experienceItem = (title, description, info) => 
+    `
+        <div class="experience-item">
+            <h3>${title}</h3>
+            <p>${description}</p>
+            <span>${info}</span>
+        </div>
+    `;
+let experienceArray = [];
+experienceArray.push(experienceItem('Remote PHP developer', 'Development both in backend and frontend of functional modules with php, mysql and bootstrap technologies of a CRM for a graphic located in Chile.', 'Remote Freelance – August 2020'))
+experienceArray.push(experienceItem('Data entry', 'Entry of information regarding work schedules, work processes, creation of JIS of the manufacturing process of new pipes with office tools such as excel and word.', 'Tubhier - July 2015'))
+experienceArray.push(experienceItem('Data entry', 'Entering information about the composition of the factory"s products within its proprietary software.', 'Molinos Fénix Nutrición – Junio 2015'))
+experienceArray.push(experienceItem('Web developer', 'Website development on the sharepoint platform with C#, html, css and jquery.', 'Raona – Febrero 2014'))
+experienceContainer.innerHTML = experienceArray;
