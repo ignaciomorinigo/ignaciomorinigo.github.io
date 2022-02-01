@@ -242,7 +242,15 @@ a.card-link:visited{
     background-image: url(../assets/img/knowledge.jpeg);
     text-shadow: 3px 3px 4px #747474;
     text-align: center;
+    ;
 }
-
-
+.knowledge-item{
+    display: inline-block;;
+    margin-top: 20px;
+    
+    height: 100%;
+    text-align: initial;
+    vertical-align: top;
+    width: 380px;
+}
 /* Contact section */

@@ -43,5 +43,5 @@ let experienceArray = [];
 experienceArray.push(experienceItem('Remote PHP developer', 'Development both in backend and frontend of functional modules with php, mysql and bootstrap technologies of a CRM for a graphic located in Chile.', 'Remote Freelance – August 2020'))
 experienceArray.push(experienceItem('Data entry', 'Entry of information regarding work schedules, work processes, creation of JIS of the manufacturing process of new pipes with office tools such as excel and word.', 'Tubhier - July 2015'))
 experienceArray.push(experienceItem('Data entry', 'Entering information about the composition of the factory"s products within its proprietary software.', 'Molinos Fénix Nutrición – Junio 2015'))
-experienceArray.push(experienceItem('Web developer', 'Website development on the sharepoint platform with C#, html, css and jquery.', 'Raona – Febrero 2014'))
+experienceArray.push(experienceItem('Web developer', 'Website development on the sharepoint platform with C#, html, css and jquery.', 'Raona – Febrero 2014  '))
 experienceContainer.innerHTML = experienceArray;
